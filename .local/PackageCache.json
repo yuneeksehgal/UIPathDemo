@@ -111,6 +111,21 @@
         "C:\\Users\\yunee\\.nuget\\packages\\uipath.vision/2.0.2-preview\\lib/net452/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\yunee\\.nuget\\packages\\uipath.uiautomation.activities/20.3.0-alpha"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.PDF.Activities",
+        "Version": "3.2.2-preview"
+      },
+      "Assemblies": [
+        "C:\\Users\\yunee\\.nuget\\packages\\bitmiracle.docotic.pdf/5.10.9957\\lib/net40/BitMiracle.Docotic.Pdf.dll",
+        "C:\\Users\\yunee\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\yunee\\.nuget\\packages\\uipath.ocr.contracts/2.5.0-preview\\lib/net45/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\yunee\\.nuget\\packages\\uipath.pdf.activities/3.2.2-preview\\lib/net461/UiPath.PDF.Activities.Design.dll",
+        "C:\\Users\\yunee\\.nuget\\packages\\uipath.pdf.activities/3.2.2-preview\\lib/net461/UiPath.PDF.Activities.dll",
+        "C:\\Users\\yunee\\.nuget\\packages\\uipath.pdf.activities/3.2.2-preview\\lib/net461/UiPath.PDF.dll"
+      ],
+      "Path": "C:\\Users\\yunee\\.nuget\\packages\\uipath.pdf.activities/3.2.2-preview"
     }
   ],
   "Conflicts": [],
@@ -118,6 +133,11 @@
     "AvalonEdit": {
       "Id": "AvalonEdit",
       "Version": "5.0.3",
+      "Dependencies": []
+    },
+    "BitMiracle.Docotic.Pdf": {
+      "Id": "BitMiracle.Docotic.Pdf",
+      "Version": "5.10.9957",
       "Dependencies": []
     },
     "BouncyCastle": {
@@ -290,6 +310,24 @@
       "Id": "UiPath.OCR.Contracts",
       "Version": "2.5.0-preview",
       "Dependencies": []
+    },
+    "UiPath.PDF.Activities": {
+      "Id": "UiPath.PDF.Activities",
+      "Version": "3.2.2-preview",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.OCR.Contracts",
+          "Item2": "[2.5.0-preview, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "BitMiracle.Docotic.Pdf",
+          "Item2": "[5.10.9957, )"
+        }
+      ]
     },
     "UiPath.System.Activities": {
       "Id": "UiPath.System.Activities",

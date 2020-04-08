@@ -1,10 +1,11 @@
 {
   "name": "FirstDemoPprcess",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "Automation Runner.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.8.2-preview]",
     "UiPath.Mail.Activities": "[1.8.2-preview]",
+    "UiPath.PDF.Activities": "[3.2.2-preview]",
     "UiPath.System.Activities": "[20.3.0-preview]",
     "UiPath.UIAutomation.Activities": "[20.3.0-alpha]"
   },
